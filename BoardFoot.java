@@ -1,18 +1,18 @@
 /*
 *
-* This is a standared diceroll random number
-* guessing program.
+* This is a standard boardFoot program
+* that calculates the length required.
 *
 * @author  Jackson Naufal
 * @version 1.0
-* @since   2020-09-23
+* @since   2020-09-26
 *
-* This is a diceroll guessing program
+* This is a boardFoot length program
 */
 
 import java.util.Scanner;
 /**
- * This is a diceroll program.
+ * This is a boardFoot program.
  */
 
 final class BoardFoot {
@@ -75,7 +75,9 @@ final class BoardFoot {
             final double userHeight = secondInput.nextDouble();
 
             // goes through ifs to see if the input equals any
-            // of these scenarios.
+            // of these scenario, if not the proccess of the program
+            // will get the information from the return in the function
+            // boardFoot, and tell the user what the length is.
             if (userWidth <= MIN || userHeight < MIN) {
                 System.out.println("Invalid Number!");
             } else {
