@@ -81,7 +81,7 @@ final class BoardFoot {
             } else {
                 final double userLength = boardFoot(userWidth, userHeight);
                 System.out.println("\n Your length is " + userLength
-                                + " inch(es)) long.");
+                + " inch(es) long.");
             }
             // This catches invalid inputs.
         } catch (java.util.InputMismatchException ex) {
