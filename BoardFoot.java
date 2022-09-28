@@ -18,11 +18,7 @@ import java.util.Scanner;
 final class BoardFoot {
 
     /**
-     * Board length constant number.
-     */
-    public static final double BOARD = 144.0;
-    /**
-     * The minimun number.
+     * The minimum number.
      */
     public static final double MIN = 0;
 
@@ -49,7 +45,8 @@ final class BoardFoot {
 
     public static double boardFoot(
                 final double width, final double height) {
-        final double userLength = Math.round(BOARD / (width * height));
+        final double board = 144.0;
+        final double userLength = Math.round(board / (width * height));
         return userLength;
     }
 
@@ -62,20 +59,20 @@ final class BoardFoot {
     public static void main(final String[] args) {
 
         // identifying the changing variables.
-        // randomNumber, counter
         final Scanner firstInput = new Scanner(System.in);
         final Scanner secondInput = new Scanner(System.in);
 
+        // gets user inputs.
+        System.out.print("Enter your width: ");
+        System.out.print("\nEnter your height: ");
         // try and catch for invalid or valid inputs.
         try {
-            // This is where the user makes their inputs.
-            System.out.print("Enter your width: ");
+            // This is where it checks the inputs.
             final double userWidth = firstInput.nextDouble();
-            System.out.print("Enter your height: ");
             final double userHeight = secondInput.nextDouble();
 
             // goes through ifs to see if the input equals any
-            // of these scenario, if not the proccess of the program
+            // of these scenario, if not the process of the program
             // will get the information from the return in the function
             // boardFoot, and tell the user what the length is.
             if (userWidth <= MIN || userHeight < MIN) {
@@ -92,4 +89,3 @@ final class BoardFoot {
         System.out.println("\nDone!");
     }
 }
-
